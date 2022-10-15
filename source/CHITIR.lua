@@ -319,7 +319,7 @@ Admin = Redis:sismember(CHITIR.."Admin:Group"..ChatId,UserId)
 Special = Redis:sismember(CHITIR.."Special:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 876995545 then
-Status = 'المبرمج الحجي'
+Status = 'مبرمج السورس'
 elseif UserId == 1415454601 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
@@ -1104,7 +1104,7 @@ elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
 if tonumber(msg.sender.user_id) == 876995545 then
-msg.Name_Controller = 'المبرمج الحجي '
+msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif tonumber(msg.sender.user_id) == 1415454601 then
 msg.Name_Controller = 'مطور السورس '
@@ -6387,7 +6387,7 @@ if Controller(msg_chat_id,UserId) == 'المطور الاساسي' then
 return send(msg_chat_id,msg_id,"\n*٠ عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId).." } *","md",true)  
 end
 if UserId == "876995545" then
-return send(msg_chat_id,msg_id,"\n*٠ عذرآ لا تستطيع استخدام الامر على المبرمج الحجي *","md",true)  
+return send(msg_chat_id,msg_id,"\n*٠ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 if UserId == "1415454601" then
 return send(msg_chat_id,msg_id,"\n*٠ عذرآ لا تستطيع استخدام الامر على مطور السورس*","md",true)  
@@ -6424,7 +6424,7 @@ if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n*٠ هذا الامر يخص  '..Controller_Num(2)..' * ',"md",true)  
 end
 if UserId == "876995545" then
-return send(msg_chat_id,msg_id,"\n*٠ عذرآ لا تستطيع استخدام الامر على المبرمج الحجي *","md",true)  
+return send(msg_chat_id,msg_id,"\ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 if UserId == "1415454601" then
 return send(msg_chat_id,msg_id,"\n*٠ عذرآ لا تستطيع استخدام الامر على مطور السورس *","md",true)  
@@ -11791,7 +11791,7 @@ end
 send(msg_chat_id,msg_id,t,"md",true) 
 end 
 
-if text == 'الحجي' or text == 'خالد'  then
+if text == 'الحجي' or text == 'alsh'  then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
@@ -11803,7 +11803,7 @@ data = {
 return send(msg_chat_id,msg_id,"[ᥲᥣᎥ](tg://user?id=876995545)","md",true, false, false, true, reply_markup)
 end
 
-if text == 'ابو المجد' then
+if text == 'حجي علي' then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
@@ -11916,7 +11916,7 @@ Mmhm = math.random(198,216)
 Mhmm = math.random(257,626)
 local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
 local Rrr = Texting[math.random(#Texting)]
-local m = "https://t.me/mmsst13/"..Rrr..""
+local m = "https://t.me/P9PPF/"..Rrr..""
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -11926,7 +11926,7 @@ keyboard.inline_keyboard = {
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown&reply_markup="..JSON.encode(keyboard))
 end
-if text and text:match("(.*)(مين ضافني)(.*)") then
+if text and text:match("(.*)(منو ضافني)(.*)") then
 local StatusMember = LuaTele.getChatMember(msg_chat_id,msg.sender.user_id).status.luatele
 if (StatusMember == "chatMemberStatusCreator") then
 return send(msg_chat_id,msg_id,"٠ انت منشئ المجموعه","md",true) 
@@ -12030,9 +12030,9 @@ send(msg_chat_id,msg_id,"٠ انت مطور السورس يقلبي🌚♥","md"
 elseif msg.sender.user_id == tonumber(Sudo_Id) then
 send(msg_chat_id,msg_id,"٠ انت المطور الاساسي يقلبي🌚♥","md",true)
 elseif msg.Devss then
-send(msg_chat_id,msg_id,"٠ انت مطوري علش عيني🙄♥","md",true)
+send(msg_chat_id,msg_id,"٠ انت مطوري عيني🙄♥","md",true)
 elseif msg.Dev then
-send(msg_chat_id,msg_id,"٠ انت مطوري علش عيني🙄♥","md",true)
+send(msg_chat_id,msg_id,"٠ انت مطوري عيني🙄♥","md",true)
 elseif msg.Owners then
 send(msg_chat_id,msg_id,"٠ انت مالك الكروب يقلبي🌚♥","md",true)
 elseif msg.Supcreator then
@@ -12063,7 +12063,7 @@ if text == 'ترجمه' or text == 'ترجمة' or text == 'ترجم' or text ==
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
-{{text = 'ترجمه الي العربية', data = msg.sender.user_id..'toar'},{text = 'ترجمه الي الانجليزية', data = msg.sender.user_id..'toen'}},
+{{text = 'ترجمه الى العربيه', data = msg.sender.user_id..'toar'},{text = 'ترجمه الى الانجليزيه', data = msg.sender.user_id..'toen'}},
 {{text = ' ٠ TeAm CHITIR ٠️', url = "https://t.me/CHITIRBOT"}},
 }
 }
@@ -12307,13 +12307,13 @@ if text == "رفع بقلبي" then
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(msg.sender.user_id) then
   return send(msg_chat_id,msg_id,"انت اهبل يبني عاوز ترفع نفسك فقلبك ؟؟","md")
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(CHITIR) then
-  return send(msg_chat_id,msg_id,"ابعد عني يبن الهبله","md")
+  return send(msg_chat_id,msg_id,"وخرو هلخبل منيمي","md")
 elseif Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."in_heart:") then
-  return send(msg_chat_id,msg_id,"للاسف العضو فقلب حد تاني","md")
+  return send(msg_chat_id,msg_id,"للاسف العضو بقلب واحد ثاني","md")
 elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."in_heart:")) ~= tonumber(msg.sender.user_id) and not Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."in_heart:") then
     Redis:set(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."in_heart:", msg.sender.user_id)
     Redis:sadd(CHITIR..msg_chat_id..msg.sender.user_id.."my_heart:", Message_Reply.sender.user_id)
-    return send(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"تم رفعو فقلبك").Reply,"md",true)  
+    return send(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"تم رفعته فقلبك").Reply,"md",true)  
   end
 end
 if text == "تنزيل من قلبي" then 
@@ -12323,7 +12323,7 @@ if text == "تنزيل من قلبي" then
     Redis:srem(CHITIR..msg_chat_id..msg.sender.user_id.."my_heart:", msg_chat_id..Message_Reply.sender.user_id)
     return send(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"تم تنزيلو من قلبك").Reply,"md",true) 
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(msg.sender.user_id) then
-  return send(msg_chat_id,msg_id,"انت اهبل يبني عاوز تنزل نفسك من قلبك ؟؟","md")
+  return send(msg_chat_id,msg_id,"هلخبل يريد ينزل نفه من قلبه ؟؟","md")
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(CHITIR) then
   return send(msg_chat_id,msg_id,"ابعد عني يبن الهبله","md")
 elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."in_heart:")) ~= tonumber(msg.sender.user_id)then
@@ -12332,7 +12332,7 @@ elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."in
 end
 if text == "انا فقلب مين" then
   if not Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."in_heart:") then
-    return send(msg_chat_id,msg_id,"اقعد يعم انت محدش طايقك","md")
+    return send(msg_chat_id,msg_id,"ثلاثه بلفرع ميعرفوك تريد اني اعرفك","md")
   elseif Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."in_heart:") then
     local in_heart_id = Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."in_heart:")
     local heart_name = LuaTele.getUser(in_heart_id).first_name
@@ -12392,12 +12392,12 @@ local reply_markup = LuaTele.replyMarkup{
   type = 'inline',
   data = {
   {
-  {text = 'موافق', data = msg.sender.user_id..'/yes_zw/'..member_id},
-  {text = 'مش موافق', data = msg.sender.user_id..'/no_zw/'..member_id},
+  {text = 'اوافق', data = msg.sender.user_id..'/yes_zw/'..member_id},
+  {text = 'ما وافق', data = msg.sender.user_id..'/no_zw/'..member_id},
   },
   }
   }
-return send(msg_chat_id,msg_id,"جبتلك عروسه انما اي لقطه "..mem_tag.." اي رايك فيها ؟؟","md",false, false, false, false, reply_markup)
+return send(msg_chat_id,msg_id,"جبتلك عروسه بس شنو تشك شك "..mem_tag.." اي رايك فيها ؟؟","md",false, false, false, false, reply_markup)
 end
 end
 if text == "تتزوجيني" and msg.reply_to_message_id ~= 0 then
@@ -12405,17 +12405,17 @@ local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 if tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")) == tonumber(msg.sender.user_id) or tonumber(Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")) == tonumber(Message_Reply.sender.user_id) then
   return send(msg_chat_id,msg_id,"منتو متزوجين ولا هو محن وخلاص","md")
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(msg.sender.user_id) then
-  return send(msg_chat_id,msg_id,"انت اهبل يبني عاوز تتزوج نفسك ؟؟","md")
+  return send(msg_chat_id,msg_id,"انت مخبل حبيبي تريد تتزوج نفسك ؟؟","md")
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(CHITIR) then
-  return send(msg_chat_id,msg_id,"ابعد عني يبن الحيحانه","md")
+  return send(msg_chat_id,msg_id,"وخر عني يبن الحيحانه","md")
 elseif Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:") then
 local zwg_id =  Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")
 local zwg_info = LuaTele.getUser(zwg_id)
-return send(msg_chat_id,msg_id,"هناديلك زوجها\n["..zwg_info.first_name.."](tg://user?id="..zwg_id..")\nالحق يا دكر عاوزين يتزوجو مراتك","md")
+return send(msg_chat_id,msg_id,"هناديلك زوجها\n["..zwg_info.first_name.."](tg://user?id="..zwg_id..")\nالحك يمطي راح يزوجون مرتك ونته طامس","md")
 elseif Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:") then
   local zwg_id =  Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")
   local zwg_info = LuaTele.getUser(zwg_id)
-  return send(msg_chat_id,msg_id,"هناديلك مراتك\n["..zwg_info.first_name.."](tg://user?id="..zwg_id..")\nالحقي يا وليه زوجك عاوز يتزوج عليكي","md")
+  return send(msg_chat_id,msg_id,"هناديلك مراتك\n["..zwg_info.first_name.."](tg://user?id="..zwg_id..")\nويج الحكي زوجج راح ينخمط","md")
 elseif not Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")  then
 local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 local rep_info = LuaTele.getUser(Message_Reply.sender.user_id)
@@ -12440,7 +12440,7 @@ if text == "زوجتي" then
     local zwga_name = LuaTele.getUser(zwga_id).first_name
     return send(msg_chat_id,msg_id,"كلمي يا ["..zwga_name.."](tg://user?id="..zwga_id..") زوجك عاوزك","md")
   elseif not Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:") then
-    return send(msg_chat_id,msg_id,"زوجتك اي يهبل انت سنجل","md")
+    return send(msg_chat_id,msg_id,"زوجتك شنو هوه انته ياهو تاخدك","md")
   end
 end
 if text == "زوجي" then
@@ -12449,27 +12449,27 @@ if text == "زوجي" then
     local zwga_name = LuaTele.getUser(zwga_id).first_name
     return send(msg_chat_id,msg_id,"كلم يا ["..zwga_name.."](tg://user?id="..zwga_id..") مراتك عوزاك","md")
   elseif not Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:") then
-    return send(msg_chat_id,msg_id,"انتي مش متزوجه يا عبيطه","md")
+    return send(msg_chat_id,msg_id,"انتي عانس يعمري","md")
   end
 end
 if text == "انتي طالق" and  msg.reply_to_message_id ~= 0 then 
   local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 if tonumber(Message_Reply.sender.user_id) == tonumber(msg.sender.user_id) then
-  return send(msg_chat_id,msg_id,"انت اهبل يبني عاوز تطلق نفسك ؟؟","md")
+  return send(msg_chat_id,msg_id,"انت مطي يعني منو يطلك روحه ؟؟","md")
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(CHITIR) then
   return send(msg_chat_id,msg_id,"ابعد عني يبن الحيحانه","md")
 elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")) ~= tonumber(msg.sender.user_id) or tonumber(Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")) ~= tonumber(Message_Reply.sender.user_id) then
-  return send(msg_chat_id,msg_id,"مش مراتك عشان تطلقها يهبل","md")
+  return send(msg_chat_id,msg_id,"هيه مكلبتك حته طلقها","md")
 elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")) == tonumber(msg.sender.user_id) or tonumber(Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")) == tonumber(Message_Reply.sender.user_id) then
     Redis:del(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")
     Redis:del(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")
-    return send(msg_chat_id,msg_id,"تم طلاقكم وشوفو العيال هتبقا مع مين","md")
+    return send(msg_chat_id,msg_id,"تم طلاقكم وشوفو الجهال ضل ويامن","md")
   end
 end
 if text == "انت طالق" and  msg.reply_to_message_id ~= 0 then 
   local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 if tonumber(Message_Reply.sender.user_id) == tonumber(msg.sender.user_id) then
-  return send(msg_chat_id,msg_id,"انتي هبله يبنتي عاوزه تطلقي نفسك ؟؟","md")
+  return send(msg_chat_id,msg_id,"انتي خبله يبنتي تردين تطلقين نفسك ؟؟","md")
 elseif tonumber(Message_Reply.sender.user_id) == tonumber(CHITIR) then
   return send(msg_chat_id,msg_id,"ابعدي عني يبنت الحيحانه","md")
 elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")) ~= tonumber(msg.sender.user_id) or tonumber(Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")) ~= tonumber(Message_Reply.sender.user_id) then
@@ -12477,18 +12477,18 @@ elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mt
 elseif tonumber(Redis:get(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")) == tonumber(msg.sender.user_id) or tonumber(Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")) == tonumber(Message_Reply.sender.user_id) then
     Redis:del(CHITIR..msg_chat_id..Message_Reply.sender.user_id.."mtzwga:")
     Redis:del(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")
-    return send(msg_chat_id,msg_id,"تم طلاقكم وشوفو العيال هتبقا مع مين","md")
+    return send(msg_chat_id,msg_id,"تم طلاقكم وشوفو الجهال وين تودوهم","md")
   end
 end
 if text == "بوت طلقني" then
   if not Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:") then 
-  return send(msg_chat_id,msg_id,"انت ولا متزوج ولا متنيل عشان اطلقك","md")
+  return send(msg_chat_id,msg_id,"انت ولا متزوج ولا مرتبط حته اطلقك","md")
   elseif Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:") then
     local zwg_id = Redis:get(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")
     local zwg_name = LuaTele.getUser(zwg_id).first_name
     Redis:del(CHITIR..msg_chat_id..msg.sender.user_id.."mtzwga:")
     Redis:del(CHITIR..msg_chat_id..zwg_id.."mtzwga:")
-    return send(msg_chat_id,msg_id,"تم طلاقك من ["..zwg_name.."](tg://user?id="..zwg_id..")\nشوفو مين هياخد العيال بقا","md")
+    return send(msg_chat_id,msg_id,"تم طلاقك من ["..zwg_name.."](tg://user?id="..zwg_id..")\nشوفو الجهال المن عود مو شمروهم","md")
   end
 end
 -------
@@ -13189,7 +13189,7 @@ Redis:set(CHITIR.."boballban"..creditcc,text)
 Redis:set(CHITIR.."boballid"..creditcc,banid)
 Redis:sadd(CHITIR.."booob",msg.sender.user_id)
 Redis:del(CHITIR.."booobb" .. msg.chat_id .. ":" .. msg.sender.user_id) 
-send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 جنيه 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditcc.."` )\n•  نوع البطاقة ↢ ( ماستر 💳 )\n•  فلوسك ↢ ( 10 جنيه 💵 )  ","md",true)  
+send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 دولار 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditcc.."` )\n•  نوع البطاقة ↢ ( ماستر 💳 )\n•  فلوسك ↢ ( 10 دولار 💵 )  ","md",true)  
 end 
 if text == "فيزا" then
 local ban = LuaTele.getUser(msg.sender.user_id)
@@ -13210,7 +13210,7 @@ Redis:set(CHITIR.."boballban"..creditvi,text)
 Redis:set(CHITIR.."boballid"..creditvi,banid)
 Redis:sadd(CHITIR.."booob",msg.sender.user_id)
 Redis:del(CHITIR.."booobb" .. msg.chat_id .. ":" .. msg.sender.user_id) 
-send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 جنيه 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditvi.."` )\n•  نوع البطاقة ↢ ( فيزا 💳 )\n•  فلوسك ↢ ( 10 جنيه 💵 )  ","md",true)   
+send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 دولار 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditvi.."` )\n•  نوع البطاقة ↢ ( فيزا 💳 )\n•  فلوسك ↢ ( 10 دولار 💵 )  ","md",true)   
 end 
 if text == "جيتر" then
 local ban = LuaTele.getUser(msg.sender.user_id)
@@ -13231,7 +13231,7 @@ Redis:set(CHITIR.."boballban"..creditvi,text)
 Redis:set(CHITIR.."boballid"..creditvi,banid)
 Redis:sadd(CHITIR.."booob",msg.sender.user_id)
 Redis:del(CHITIR.."booobb" .. msg.chat_id .. ":" .. msg.sender.user_id) 
-send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 جنيه 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditvi.."` )\n•  نوع البطاقة ↢ ( جيتر 💳 )\n•  فلوسك ↢ ( 10 جنيه 💵 )  ","md",true)   
+send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 دولار 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditvi.."` )\n•  نوع البطاقة ↢ ( جيتر 💳 )\n•  فلوسك ↢ ( 10 دولار 💵 )  ","md",true)   
 end 
 if text == "اكسبرس" then
 local ban = LuaTele.getUser(msg.sender.user_id)
@@ -13252,7 +13252,7 @@ Redis:set(CHITIR.."boballban"..creditex,text)
 Redis:set(CHITIR.."boballid"..creditex,banid)
 Redis:sadd(CHITIR.."booob",msg.sender.user_id)
 Redis:del(CHITIR.."booobb" .. msg.chat_id .. ":" .. msg.sender.user_id) 
-send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 جنيه 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditex.."` )\n•  نوع البطاقة ↢ ( اكسبرس 💳 )\n•  فلوسك ↢ ( 10 جنيه 💵 )  ","md",true)   
+send(msg.chat_id,msg.id, "\n• وسوينا لك حساب في بنك جيتر 🏦\n• وشحنالك 10 دولار 💵 هدية\n\n•  رقم حسابك ↢ ( `"..creditex.."` )\n•  نوع البطاقة ↢ ( اكسبرس 💳 )\n•  فلوسك ↢ ( 10 دولار 💵 )  ","md",true)   
 end 
 end
 if text == "البنك" then
@@ -13302,7 +13302,7 @@ ballancee = Redis:get(CHITIR.."boob"..msg.sender.user_id) or 0
 if tonumber(ballancee) < 1 then
 return send(msg.chat_id,msg.id, "•  ماعندك فلوس ارسل الالعاب وابدأ بجمع الفلوس \n✦","md",true)
 end
-send(msg.chat_id,msg.id, "•  فلوسك "..ballancee.." جنيه 💵","md",true)
+send(msg.chat_id,msg.id, "•  فلوسك "..ballancee.." دولار 💵","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -13317,7 +13317,7 @@ return false
 end
 if Redis:sismember(CHITIR.."booob",Remsg.sender.user_id) then
 ballanceed = Redis:get(CHITIR.."boob"..Remsg.sender.user_id) or 0
-send(msg.chat_id,msg.id, "•  فلوسه "..ballanceed.." جنيه 💵","md",true)
+send(msg.chat_id,msg.id, "•  فلوسه "..ballanceed.." دولار 💵","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعنده حساب بنكي ","md",true)
 end
@@ -13335,7 +13335,7 @@ cccc = Redis:get(CHITIR.."boobb"..msg.sender.user_id)
 uuuu = Redis:get(CHITIR.."bbobb"..msg.sender.user_id)
 pppp = Redis:get(CHITIR.."zrfff"..msg.sender.user_id) or 0
 ballancee = Redis:get(CHITIR.."boob"..msg.sender.user_id) or 0
-send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..cccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuu.." )\n•  الرصيد ↢ ( "..ballancee.." جنيه 💵 )\n•  الزرف ( "..pppp.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..cccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuu.." )\n•  الرصيد ↢ ( "..ballancee.." دولار 💵 )\n•  الزرف ( "..pppp.." دولار 💵 )\n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -13365,7 +13365,7 @@ Redis:del(CHITIR.."boob"..Remsg.sender.user_id)
 Redis:del(CHITIR.."boobb"..Remsg.sender.user_id)
 Redis:del(CHITIR.."zrfff"..Remsg.sender.user_id)
 Redis:srem(CHITIR.."zrfffid", Remsg.sender.user_id)
-send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الرصيد ↢ ( "..ballanceed.." جنيه 💵 )\n•  الزرف ↢ ( "..ppppp.." جنيه 💵 )\n•  مسكين مسحت حسابه \n✦","md",true)
+send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الرصيد ↢ ( "..ballanceed.." دولار 💵 )\n•  الزرف ↢ ( "..ppppp.." دولار 💵 )\n•  مسكين مسحت حسابه \n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعنده حساب بنكي اصلاً ","md",true)
 end
@@ -13390,7 +13390,7 @@ ccccc = Redis:get(CHITIR.."boobb"..Remsg.sender.user_id)
 uuuuu = Redis:get(CHITIR.."bbobb"..Remsg.sender.user_id)
 ppppp = Redis:get(CHITIR.."zrfff"..Remsg.sender.user_id) or 0
 ballanceed = Redis:get(CHITIR.."boob"..Remsg.sender.user_id) or 0
-send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الرصيد ↢ ( "..ballanceed.." جنيه 💵 )\n•  الزرف ↢ ( "..ppppp.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الرصيد ↢ ( "..ballanceed.." دولار 💵 )\n•  الزرف ↢ ( "..ppppp.." دولار 💵 )\n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعنده حساب بنكي ","md",true)
 end
@@ -13427,7 +13427,7 @@ Redis:del(CHITIR.."boob"..coniss)
 Redis:del(CHITIR.."boobb"..coniss)
 Redis:del(CHITIR.."zrfff"..coniss)
 Redis:srem(CHITIR.."zrfffid", coniss)
-send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الرصيد ↢ ( "..ballanceed.." جنيه 💵 )\n•  الزرف ↢ ( "..ppppp.." جنيه 💵 )\n•  مسكين مسحت حسابه \n✦","md",true)
+send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الرصيد ↢ ( "..ballanceed.." دولار 💵 )\n•  الزرف ↢ ( "..ppppp.." دولار 💵 )\n•  مسكين مسحت حسابه \n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعنده حساب بنكي اصلاً ","md",true)
 end
@@ -13452,7 +13452,7 @@ if Redis:get(CHITIR.."boballcc"..coniss) then
 local yty = Redis:get(CHITIR.."boballname"..coniss)
 local dfhb = Redis:get(CHITIR.."boballbalc"..coniss)
 local fsvhh = Redis:get(CHITIR.."boballban"..coniss)
-send(msg.chat_id,msg.id, "•  الاسم ↢ "..yty.."\n•  الحساب ↢ `"..coniss.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..fsvhh.." )\n•  الرصيد ↢ ( "..dfhb.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  الاسم ↢ "..yty.."\n•  الحساب ↢ `"..coniss.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..fsvhh.." )\n•  الرصيد ↢ ( "..dfhb.." دولار 💵 )\n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  مافيه حساب بنكي كذا","md",true)
 end
@@ -13483,7 +13483,7 @@ return send(msg.chat_id,msg.id,"•  مايمديك تضارب الحين\n•  
 end
 ballancee = Redis:get(CHITIR.."boob"..msg.sender.user_id) or 0
 if tonumber(coniss) < 99 then
-return send(msg.chat_id,msg.id, "•  الحد الادنى المسموح هو 100 جنيه 💵\n✦","md",true)
+return send(msg.chat_id,msg.id, "•  الحد الادنى المسموح هو 100 دولار 💵\n✦","md",true)
 end
 if tonumber(ballancee) < tonumber(coniss) then
 return send(msg.chat_id,msg.id, "•  فلوسك ماتكفي \n✦","md",true)
@@ -13496,13 +13496,13 @@ ballanceekku = coniss / 100 * modarbaa
 ballanceekkku = ballancee - ballanceekku
 Redis:set(CHITIR.."boob"..msg.sender.user_id , math.floor(ballanceekkku))
 Redis:setex(CHITIR.."iiooooo" .. msg.sender.user_id,1200, true)
-send(msg.chat_id,msg.id, "•  مضاربة فاشلة 📉\n•  نسبة الخسارة ↢ "..modarbaa.."%\n•  المبلغ الذي خسرته ↢ ( "..ballanceekku.." جنيه 💵 )\n•  فلوسك صارت ↢ ( "..ballanceekkku.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  مضاربة فاشلة 📉\n•  نسبة الخسارة ↢ "..modarbaa.."%\n•  المبلغ الذي خسرته ↢ ( "..ballanceekku.." دولار 💵 )\n•  فلوسك صارت ↢ ( "..ballanceekkku.." دولار 💵 )\n✦","md",true)
 elseif Descriptioontt == "2" or Descriptioontt == "4" then
 ballanceekku = coniss / 100 * modarbaa
 ballanceekkku = ballancee + ballanceekku
 Redis:set(CHITIR.."boob"..msg.sender.user_id , math.floor(ballanceekkku))
 Redis:setex(CHITIR.."iiooooo" .. msg.sender.user_id,1200, true)
-send(msg.chat_id,msg.id, "•  مضاربة ناجحة 📈\n•  نسبة الربح ↢ "..modarbaa.."%\n•  المبلغ الذي ربحته ↢ ( "..ballanceekku.." جنيه 💵 )\n•  فلوسك صارت ↢ ( "..ballanceekkku.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  مضاربة ناجحة 📈\n•  نسبة الربح ↢ "..modarbaa.."%\n•  المبلغ الذي ربحته ↢ ( "..ballanceekku.." دولار 💵 )\n•  فلوسك صارت ↢ ( "..ballanceekkku.." دولار 💵 )\n✦","md",true)
 else
 Redis:setex(CHITIR.."iiooooo" .. msg.sender.user_id,1200, true)
 send(msg.chat_id,msg.id, "•  تأخرت اليوم والبنك مسكر ارجع بعدين \n✦","md",true)
@@ -13547,7 +13547,7 @@ ballanceekk = coniss / 100 * hadddd
 ballanceekkk = ballancee + ballanceekk
 Redis:incrby(CHITIR.."boob"..msg.sender.user_id , math.floor(ballanceekk))
 Redis:setex(CHITIR.."iioooo" .. msg.sender.user_id,1200, true)
-send(msg.chat_id,msg.id, "•  استثمار ناجح 💰\n•  نسبة الربح ↢ "..hadddd.."%\n•  مبلغ الربح ↢ ( "..ballanceekk.." جنيه 💵 )\n•  فلوسك صارت ↢ ( "..ballanceekkk.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  استثمار ناجح 💰\n•  نسبة الربح ↢ "..hadddd.."%\n•  مبلغ الربح ↢ ( "..ballanceekk.." دولار 💵 )\n•  فلوسك صارت ↢ ( "..ballanceekkk.." دولار 💵 )\n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
 end
@@ -13587,12 +13587,12 @@ if haddd == "1" or haddd == "3" then
 local ballanceek = ballancee + coniss
 Redis:incrby(CHITIR.."boob"..msg.sender.user_id , coniss)
 Redis:setex(CHITIR.."iiooo" .. msg.sender.user_id,1200, true)
-send(msg.chat_id,msg.id, "•  مبروك فزت بالحظ 🎉\n•  فلوسك قبل ↢ ( "..ballancee.." جنيه 💵 )\n•  فلوسك الحين ↢ ( "..ballanceek.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  مبروك فزت بالحظ 🎉\n•  فلوسك قبل ↢ ( "..ballancee.." دولار 💵 )\n•  فلوسك الحين ↢ ( "..ballanceek.." دولار 💵 )\n✦","md",true)
 else
 local ballanceekk = ballancee - coniss
 Redis:decrby(CHITIR.."boob"..msg.sender.user_id , coniss)
 Redis:setex(CHITIR.."iiooo" .. msg.sender.user_id,1200, true)
-send(msg.chat_id,msg.id, "•  للاسف خسرت بالحظ 😬\n•  فلوسك قبل ↢ ( "..ballancee.." جنيه 💵 )\n•  فلوسك الحين ↢ ( "..ballanceekk.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  للاسف خسرت بالحظ 😬\n•  فلوسك قبل ↢ ( "..ballancee.." دولار 💵 )\n•  فلوسك الحين ↢ ( "..ballanceekk.." دولار 💵 )\n✦","md",true)
 end
 else
 send(msg.chat_id,msg.id, "•  ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
@@ -13622,7 +13622,7 @@ if not Redis:sismember(CHITIR.."booob",msg.sender.user_id) then
 return send(msg.chat_id,msg.id, "•  ماعندك حساب بنكي ","md",true)
 end
 if tonumber(coniss) < 100 then
-return send(msg.chat_id,msg.id, "•  الحد الادنى المسموح به هو 100 جنيه \n✦","md",true)
+return send(msg.chat_id,msg.id, "•  الحد الادنى المسموح به هو 100 دولار \n✦","md",true)
 end
 ballancee = Redis:get(CHITIR.."boob"..msg.sender.user_id) or 0
 if tonumber(ballancee) < 100 then
@@ -13676,8 +13676,8 @@ UserNameyr = UserNamey / 10
 UserNameyy = UserNamey - UserNameyr
 Redis:decrby(CHITIR.."boob"..msg.sender.user_id , UserNamey)
 Redis:incrby(CHITIR.."boob"..fsvhhh , math.floor(UserNameyy))
-send(msg.chat_id,msg.id, "حوالة صادرة من بنك جيتر\n\nالمرسل : "..news.."\nالحساب رقم : `"..cccc.."`\nنوع البطاقة : "..uuuu.."\nالمستلم : "..newss.."\nالحساب رقم : `"..text.."`\nنوع البطاقة : "..fsvhh.."\nخصمت 10% رسوم تحويل\nالمبلغ : "..UserNameyy.." جنيه 💵","md",true)
-send(fsvhhh,0, "حوالة واردة من بنك جيتر\n\nالمرسل : "..news.."\nالحساب رقم : `"..cccc.."`\nنوع البطاقة : "..uuuu.."\nالمبلغ : "..UserNameyy.." جنيه 💵","md",true)
+send(msg.chat_id,msg.id, "حوالة صادرة من بنك جيتر\n\nالمرسل : "..news.."\nالحساب رقم : `"..cccc.."`\nنوع البطاقة : "..uuuu.."\nالمستلم : "..newss.."\nالحساب رقم : `"..text.."`\nنوع البطاقة : "..fsvhh.."\nخصمت 10% رسوم تحويل\nالمبلغ : "..UserNameyy.." دولار 💵","md",true)
+send(fsvhhh,0, "حوالة واردة من بنك جيتر\n\nالمرسل : "..news.."\nالحساب رقم : `"..cccc.."`\nنوع البطاقة : "..uuuu.."\nالمبلغ : "..UserNameyy.." دولار 💵","md",true)
 Redis:del(CHITIR.."trans" .. msg.chat_id .. ":" .. msg.sender.user_id) 
 Redis:del(CHITIR.."transn" .. msg.sender.user_id)
 else
@@ -13721,7 +13721,7 @@ ccccc = Redis:get(CHITIR.."boobb"..Remsg.sender.user_id)
 uuuuu = Redis:get(CHITIR.."bbobb"..Remsg.sender.user_id)
 ppppp = Redis:get(CHITIR.."zrfff"..Remsg.sender.user_id) or 0
 ballanceed = Redis:get(CHITIR.."boob"..Remsg.sender.user_id) or 0
-send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الزرف ↢ ( "..ppppp.." جنيه 💵 )\n•  صار رصيده ↢ ( "..ballanceed.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الزرف ↢ ( "..ppppp.." دولار 💵 )\n•  صار رصيده ↢ ( "..ballanceed.." دولار 💵 )\n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعنده حساب بنكي ","md",true)
 end
@@ -13761,7 +13761,7 @@ ccccc = Redis:get(CHITIR.."boobb"..Remsg.sender.user_id)
 uuuuu = Redis:get(CHITIR.."bbobb"..Remsg.sender.user_id)
 ppppp = Redis:get(CHITIR.."zrfff"..Remsg.sender.user_id) or 0
 ballanceed = Redis:get(CHITIR.."boob"..Remsg.sender.user_id) or 0
-send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الزرف ↢ ( "..ppppp.." جنيه 💵 )\n•  صار رصيده ↢ ( "..ballanceed.." جنيه 💵 )\n✦","md",true)
+send(msg.chat_id,msg.id, "•  الاسم ↢ "..news.."\n•  الحساب ↢ `"..ccccc.."`\n•  بنك ↢ ( جيتر )\n•  نوع ↢ ( "..uuuuu.." )\n•  الزرف ↢ ( "..ppppp.." دولار 💵 )\n•  صار رصيده ↢ ( "..ballanceed.." دولار 💵 )\n✦","md",true)
 else
 send(msg.chat_id,msg.id, "•  ماعنده حساب بنكي ","md",true)
 end
@@ -13861,7 +13861,7 @@ return send(msg.chat_id,msg.id,"•  من شوي اخذت بخشيش استنى 
 end
 local jjjo = math.random(1,200);
 Redis:incrby(CHITIR.."boob"..msg.sender.user_id , jjjo)
-send(msg.chat_id,msg.id,"•  تكرم وهي بخشيش "..jjjo.." جنيه 💵","md",true)
+send(msg.chat_id,msg.id,"•  تكرم وهي بخشيش "..jjjo.." دولار 💵","md",true)
 Redis:setex(CHITIR.."iioo" .. msg.sender.user_id,600, true)
 else
 send(msg.chat_id,msg.id, "•  ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
@@ -13894,7 +13894,7 @@ end
 if Redis:sismember(CHITIR.."booob",Remsg.sender.user_id) then
 ballanceed = Redis:get(CHITIR.."boob"..Remsg.sender.user_id) or 0
 if tonumber(ballanceed) < 199 then
-return send(msg.chat_id,msg.id, "•  مايمديك تزرفه فلوسه اقل من 200 جنيه 💵","md",true)
+return send(msg.chat_id,msg.id, "•  مايمديك تزرفه فلوسه اقل من 200 دولار 💵","md",true)
 end
 local hrame = math.floor(math.random() * 200) + 1;
 local hramee = math.floor(math.random() * 5) + 1;
@@ -13905,7 +13905,7 @@ Redis:decrby(CHITIR.."boob"..Remsg.sender.user_id , hrame)
 Redis:setex(CHITIR.."hrame" .. Remsg.sender.user_id,900, true)
 Redis:incrby(CHITIR.."zrfff"..msg.sender.user_id,hrame)
 Redis:sadd(CHITIR.."zrfffid",msg.sender.user_id)
-send(msg.chat_id,msg.id, "•  خذ يالحرامي زرفته "..hrame.." جنيه 💵\n✦","md",true)
+send(msg.chat_id,msg.id, "•  خذ يالحرامي زرفته "..hrame.." دولار 💵\n✦","md",true)
 else
 Redis:setex(CHITIR.."polic" .. msg.sender.user_id,300, true)
 send(msg.chat_id,msg.id, "•  مسكتك الشرطة وانتا تزرف 🚔\n✦","md",true)
@@ -13963,7 +13963,7 @@ ratbk = "5000"
 your_job = "فتاحه 💋"
 end
 local ballancee = Redis:get(CHITIR.."boob"..msg.sender.user_id) or 0
-send(msg.chat_id,msg.id,"• اشعار ايداع "..neews.."\n• وظيفتك : "..your_job.."\n• المبلغ : "..ratbk.." جنيه 💵\n• نوع العملية : اضافة راتب\n• رصيدك الحين : "..ballancee.." جنيه 💵","md",true)
+send(msg.chat_id,msg.id,"• اشعار ايداع "..neews.."\n• وظيفتك : "..your_job.."\n• المبلغ : "..ratbk.." دولار 💵\n• نوع العملية : اضافة راتب\n• رصيدك الحين : "..ballancee.." دولار 💵","md",true)
 Redis:setex(CHITIR.."iiioo" .. msg.sender.user_id,600, true)
 else
 send(msg.chat_id,msg.id, "•  ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true)
@@ -14040,22 +14040,22 @@ if text == 'مميز' and tonumber(balance)  >= 2000 then
 Redis:decrby(CHITIR.."boob"..msg.sender.user_id , 2000)
 Redis:sadd(CHITIR.."Special:Group"..msg_chat_id,msg.sender.user_id) 
 Redis:del(CHITIR..msg.chat_id..msg.sender.user_id.."txtrtb") 
-return send(msg.chat_id,msg.id,"• تم رفعك مميز بنجاح وخصم 3000 جنيه من فلوسك")
+return send(msg.chat_id,msg.id,"• تم رفعك مميز بنجاح وخصم 3000 دولار من فلوسك")
 elseif text == "ادمن" and tonumber(balance)  >= 4000 then
 Redis:decrby(CHITIR.."boob"..msg.sender.user_id , 4000)
 Redis:sadd(CHITIR.."Admin:Group"..msg_chat_id,msg.sender.user_id) 
 Redis:del(CHITIR..msg.chat_id..msg.sender.user_id.."txtrtb") 
-return send(msg.chat_id,msg.id,"• تم رفعك ادمن بنجاح وخصم 4000 جنيه من فلوسك")
+return send(msg.chat_id,msg.id,"• تم رفعك ادمن بنجاح وخصم 4000 دولار من فلوسك")
 elseif text == "مدير" and tonumber(balance)  >= 6000 then
 Redis:decrby(CHITIR.."boob"..msg.sender.user_id , 6000)
 Redis:sadd(CHITIR.."Manger:Group"..msg_chat_id,msg.sender.user_id) 
 Redis:del(CHITIR..msg.chat_id..msg.sender.user_id.."txtrtb") 
-return send(msg.chat_id,msg.id,"• تم رفعك مدير بنجاح وخصم 6000 جنيه من فلوسك")
+return send(msg.chat_id,msg.id,"• تم رفعك مدير بنجاح وخصم 6000 دولار من فلوسك")
 elseif text == "منشئ" and tonumber(balance)  >= 8000 then 
 Redis:decrby(CHITIR.."boob"..msg.sender.user_id , 8000)
 Redis:sadd(CHITIR.."Creator:Group"..msg_chat_id,msg.sender.user_id) 
 Redis:del(CHITIR..msg.chat_id..msg.sender.user_id.."txtrtb") 
-return send(msg.chat_id,msg.id,"• تم رفعك منشئ بنجاح وخصم 8000 جنيه من فلوسك")
+return send(msg.chat_id,msg.id,"• تم رفعك منشئ بنجاح وخصم 8000 دولار من فلوسك")
 end
 end
 if text == "شراء رتبه" then
@@ -14070,13 +14070,13 @@ if tonumber(balance) < 2000 then
 return send(msg.chat_id,msg.id,"• فلوسك لا تكفي لشراء اي رتبه")
 end
 if tonumber(balance)  >= 2000 and tonumber(balance) < 4000 then
-Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 جنيه) \n\n • اضغط علي الرتبه ليتم نسخها"
+Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 دولار) \n\n • اضغط علي الرتبه ليتم نسخها"
 elseif tonumber(balance) >= 4000 and tonumber(balance) < 6000 then
-Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 جنيه)\n• `ادمن` (4000 جنيه) \n\n • اضغط علي الرتبه ليتم نسخها"
+Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 دولار)\n• `ادمن` (4000 دولار) \n\n • اضغط علي الرتبه ليتم نسخها"
 elseif tonumber(balance) >= 6000 and tonumber(balance) < 8000 then
-Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 جنيه)\n• `ادمن` (4000 جنيه) \n• `مدير` (6000 جنيه)\n\n • اضغط علي الرتبه ليتم نسخها"
+Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 دولار)\n• `ادمن` (4000 دولار) \n• `مدير` (6000 دولار)\n\n • اضغط علي الرتبه ليتم نسخها"
 elseif tonumber(balance) >= 8000 then
-Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 جنيه)\n• `ادمن` (4000 جنيه) \n• `مدير` (6000 جنيه)\n• `منشئ` (8000 جنيه)\n\n • اضغط علي الرتبه ليتم نسخها"
+Txtrtb = "• الرتب اللتي يمكنك شرائها هي \n\n• `مميز` (2000 دولار)\n• `ادمن` (4000 دولار) \n• `مدير` (6000 دولار)\n• `منشئ` (8000 دولار)\n\n • اضغط علي الرتبه ليتم نسخها"
 end
 Redis:setex(CHITIR..msg.chat_id..msg.sender.user_id.."txtrtb",180,true)
 return send(msg.chat_id,msg.id,Txtrtb,"md")
@@ -14634,14 +14634,14 @@ return send(msg_chat_id,msg_id,txx)
 end
 if text == "استوري" then
 Rrr = math.random(4,50)
-local m = "https://t.me/Qapplu/"..Rrr..""
+local m = "https://t.me/RCCDD/"..Rrr..""
 local t = "اليك استوري عشوائي من البوت 🖇️🌚"
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
 end
 if text == "غنيلي فيديو" or text == "غنيلي بفيديو" then
 Rrr = math.random(1,31)
-local m = "https://t.me/ghanilyp/"..Rrr..""
+local m = "https://t.me/F9F93/"..Rrr..""
 local t = "اليك اغنيه ب فيديو🏴‍☠️♥️"
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
