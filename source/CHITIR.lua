@@ -11916,7 +11916,7 @@ Mmhm = math.random(198,216)
 Mhmm = math.random(257,626)
 local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
 local Rrr = Texting[math.random(#Texting)]
-local m = "https://t.me/mmsst13/"..Rrr..""
+local m = "https://t.me/P8PPF/"..Rrr..""
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14632,16 +14632,16 @@ end
 end
 return send(msg_chat_id,msg_id,txx)  
 end
-if text == "استوري" then
+if text == "ستوري" then
 Rrr = math.random(4,50)
-local m = "https://t.me/Qapplu/"..Rrr..""
-local t = "اليك استوري عشوائي من البوت 🖇️🌚"
+local m = "https://t.me/RCCDD/"..Rrr..""
+local t = "اليك ستوري عشوائي من البوت 🖇️🌚"
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
 end
 if text == "غنيلي فيديو" or text == "غنيلي بفيديو" then
 Rrr = math.random(1,31)
-local m = "https://t.me/ghanilyp/"..Rrr..""
+local m = "https://t.me/F9F93/"..Rrr..""
 local t = "اليك اغنيه ب فيديو🏴‍☠️♥️"
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
