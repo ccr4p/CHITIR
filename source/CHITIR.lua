@@ -11920,13 +11920,13 @@ local m = "https://t.me/P8PPF/"..Rrr..""
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'اغنيه اخري', callback_data=msg.sender.user_id.."/songg"},
+{text = 'اغنيه اخرى', callback_data=msg.sender.user_id.."/songg"},
 },
 }
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown&reply_markup="..JSON.encode(keyboard))
 end
-if text and text:match("(.*)(مين ضافني)(.*)") then
+if text and text:match("(.*)(منو ضافني)(.*)") then
 local StatusMember = LuaTele.getChatMember(msg_chat_id,msg.sender.user_id).status.luatele
 if (StatusMember == "chatMemberStatusCreator") then
 return send(msg_chat_id,msg_id,"٠ انت منشئ المجموعه","md",true) 
@@ -11938,7 +11938,7 @@ local Name = '['..UserInfo.first_name..'](tg://user?id='..Added_Me..')'
 Text = '٠ الشخص الذي قام باضافتك هو ٠ '..Name
 return send(msg_chat_id,msg_id,Text,"md",true) 
 else
-return send(msg_chat_id,msg_id,"انت دخلت عبر الرابط محدش ضافك","md",true) 
+return send(msg_chat_id,msg_id,"انت دخلت عبر الرابط محد ضافك","md",true) 
 end
 end
 if text == "نبذتي" or text == "البايو" then
@@ -14673,42 +14673,42 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الميمز لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MemzDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MemzDavidd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "فلم" or text == "افلام" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار الفلم لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/MoviesDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/Movieschit/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "انمي" or text == "انمى" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار انمي لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeDavidd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "صوره" or text == "صورة" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار صوره لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/PhotosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/Photos/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "متحركه" or text == "متحركة" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار متحركه لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavidd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "ريمكس" or text == "ريماكس" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار ريمكس لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixDavidd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "شعر" then
 Abs = math.random(2,140); 
@@ -19083,17 +19083,10 @@ local TextHelp = [[*
 ٠ اوامر الترفيه 
 – – – – – – – –
 ٠ زخرفه
-٠ حساب العمر
 ٠ اسمي
-٠ البايو
-٠ الوقت
-٠ التاريخ
-٠ ابراج
-٠ تحميل انستا من خلال الامر `انستا`
-٠ معني + الاسم 
-٠ مثال معني الحجي
-٠ انصحني 
-٠ دوله + واتبع التعليمات
+٠ يوتيوب
+٠ تحويل
+٠البايو
 *]]
 edit(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -19191,8 +19184,6 @@ local TextHelp = [[*
 ٠ لعبة الاعلام والدول ٠ اعلام
 ٠ لعبة لو خيروك ٠ خيروك
 ٠ لعبة الصراحه والجرأة ٠ صراحه
-٠ لعبه باد للأسئله +18 ٠ باد
-٠ لعبه جريمتي ويقوم البوت بإعطائك جريمه ٠ جريمتي
 – – – – – – – –
 ٠ نقاطي ٠ لعرض عدد الارباح
 ٠ بيع نقاطي ٠ { العدد } ٠ لبيع كل نقطه مقابل {50} رساله
