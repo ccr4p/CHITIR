@@ -989,7 +989,7 @@ end
 end
 
 ----
-if text == 'المطور ستيفن' or text == 'مبرمج السورس' or text == 'ستيفن' then  
+if text == 'المطور الحجي' or text == 'مبرمج السورس' or text == 'الحجي' then  
 local UserId_Info = LuaTele.searchPublicChat("CCR4P")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
