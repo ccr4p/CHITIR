@@ -1,3 +1,4 @@
+Server_Done = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
 URL     = require("./libs/url.lua")
 JSON    = require("./libs/dkjson.lua")
 serpent = require("libs/serpent.lua")
