@@ -11916,7 +11916,7 @@ Mmhm = math.random(198,216)
 Mhmm = math.random(257,626)
 local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
 local Rrr = Texting[math.random(#Texting)]
-local m = "https://t.me/P8PPF/"..Rrr..""
+local m = "https://t.me/teamsulta/"..Rrr..""
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12000,7 +12000,7 @@ os.remove('stick.jpg')
 end 
 end
 end
-if text == 'وتدتلتزهلنخلزخعلنهل' then 
+if text == 'تحويل' then 
 if tonumber(msg.reply_to_message_id) > 0 then
 local result = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
 if result.content.voice_note then 
@@ -14641,32 +14641,10 @@ https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_
 end
 if text == "غنيلي فيديو" or text == "غنيلي بفيديو" then
 Rrr = math.random(1,31)
-local m = "https://t.me/F6F63/"..Rrr..""
+local m = "https://t.me/fff3kk/"..Rrr..""
 local t = "اليك اغنيه ب فيديو🏴‍☠️♥️"
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
-end
-if text == 'Barloo' then
-local UserId_Info = LuaTele.searchPublicChat("bar_lo0o0")
-if UserId_Info.id then
-local UserInfo = LuaTele.getUser(UserId_Info.id)
-local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
-if InfoUser.bio then
-Bio = InfoUser.bio
-else
-Bio = ''
-end
-local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
-if photo.total_count > 0 then
-local TestText = "  \n\n- ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
-local msg_id = msg.id/2097152/0.5 
-return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-local TestText = "  \\nn- ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
-local msg_id = msg.id/2097152/0.5 
-return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-end
-end
 end
 if text == "ميمز" or text == "ميمزز" then 
 Abs = math.random(2,140); 
@@ -14680,28 +14658,28 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الفلم لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/Movieschit/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/rrrrrtq/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "انمي" or text == "انمى" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار انمي لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeDavidd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "صوره" or text == "صورة" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار صوره لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/Photos/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/fff6kk/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "متحركه" or text == "متحركة" then 
 Abs = math.random(2,140); 
 local Text ='*᥀︙تم اختيار متحركه لك*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavidd/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/fff4kk/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "ريمكس" or text == "ريماكس" then 
 Abs = math.random(2,140); 
@@ -14718,7 +14696,7 @@ keyboard.inline_keyboard = {
 {{text = '⧫ ٠ TeAm CHITIR ٠️️ ⧫',url="t.me/CHITIRBOT"}},
 }
 local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/QQNNSX/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/shaarshahum/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "الحاسبه" or text == "اله حاسبه" or text == "الاله الحاسبه" then
 Redis:del(CHITIR..msg.sender.user_id..msg.chat_id.."num")
@@ -14809,7 +14787,6 @@ Redis:srem(CHITIR.."gamebot:new1", text)
 return send(msg_chat_id,msg_id, '\nتم مسح السؤال بنجاح') 
 end
 end
-
 if text and text:match("^(.*)$") then
 if Redis:get(CHITIR.."gamebot:new"..msg.sender.user_id..":"..msg.chat_id) == "true" then
 Redis:set(CHITIR.."gamebot:new"..msg.sender.user_id..":"..msg.chat_id,"true1")
@@ -14912,9 +14889,7 @@ send(msg_chat_id,msg_id, '\nتم حفظ الجواب الصحيح')
 return false 
 end
 end
-
 if text == "اضف لغز" then
-
 if not msg.Devss then 
 return send(msg_chat_id,msg_id,'\n*• هذا الامر يخص { '..Controller_Num(2)..' }* ',"md",true)  
 end
@@ -14922,7 +14897,6 @@ Redis:set(CHITIR.."lkz:gamebot:new"..msg.sender.user_id..":"..msg.chat_id,true)
 return send(msg_chat_id,msg_id,"ارسل اللغز الان ")
 end
 if text == "مسح لغز" then
-
 if not msg.Devss then 
 return send(msg_chat_id,msg_id,'\n*• هذا الامر يخص { '..Controller_Num(2)..' }* ',"md",true)  
 end
@@ -14930,7 +14904,6 @@ Redis:set(CHITIR.."lkz:gamebot:new"..msg.sender.user_id..":"..msg.chat_id,'trued
 return send(msg_chat_id,msg_id,"ارسل اللغز الان ")
 end
 if text == 'الالغاز' then
-
 if not msg.Devss then 
 return send(msg_chat_id,msg_id,'\n*• هذا الامر يخص { '..Controller_Num(2)..' }* ',"md",true)  
 end
@@ -14945,14 +14918,12 @@ end
 return send(msg_chat_id,msg_id,t)
 end
 if text == 'مسح الالغاز' then
-
 if not msg.Devss then 
 return send(msg_chat_id,msg_id,'\n*• هذا الامر يخص { '..Controller_Num(2)..' }* ',"md",true)  
 end
 Redis:del(CHITIR.."lkz:gamebot:new1")
 return send(msg_chat_id,msg_id,'تم مسح الالغاز جميعا ')
 end
-
 if text == 'لغز' then
 local list = Redis:smembers(CHITIR.."lkz:gamebot:new1")
 if #list ~= 0 then
@@ -15018,7 +14989,6 @@ data = {
 }
 send(msg_chat_id,msg_id,quschen,"md",false, false, false, false, reply_markup)
 end
-
 end
 end
 if text and text:match('^تحكم @(%S+)$') then
@@ -15219,13 +15189,13 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or te
 photo = "https://t.me/B9BBI/701"
 local T =[[
 – – – – – – – –
- ٠ TeAm CHITIR ٠
+ ٠ SᴏᴜƦᴄƦ ƇӇƖƬƖƦ٠
 – – – – – – – –
 ٠ DEV >> [˹ ᥲᥣᎥ .](t.me/CCR4P)
 – – – – – – – – 
-٠ Exp >> [˹ Exp CHITIR .](t.me/CCR5P)
+٠ Exp >> [˹ Exp ƇӇƖƬƖƦ .](t.me/CCR5P)
 – – – – – – – – 
-٠ـــ٠ >> [˹ TeAm CHITIR .](t.me/CHITIRBOT)
+٠ـــ٠ >> [˹ ƇӇƖƬƖƦ .](t.me/CHITIRBOT)
 – – – – – – – – 
 ]]
 keyboard = {} 
@@ -15234,7 +15204,7 @@ keyboard.inline_keyboard = {
 {text = 'ᥲᥣᎥ', url = "https://t.me/CCR4P"},
 },
 {
-{text = 'TeAm CHITIR ', url = "https://t.me/CHITIRBOT"}
+{text = 'SᴏᴜƦᴄƦ ƇӇƖƬƖƦ ', url = "https://t.me/CHITIRBOT"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -15490,9 +15460,9 @@ if Redis:get(CHITIR.."name bot type : ") == "photo" then
     local NamesBot = (Redis:get(CHITIR.."Name:Bot") or "جيتر")
     local NameBots = {
 "قلب "..NamesBot ,
-"مين مزعلك بس يعيوني",
+"منو مزعلك يعيوني",
 "ثانيه واحده بسلك رقم واحده",
-"انا مش فاضي جيتر مكاني اهو",
+"مشغول حبيبي شويه وتعال",
 "قلبه ودقاته وكل حياته"
 }
   return LuaTele.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,NameBots[math.random(#NameBots)], "md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup )
@@ -15500,9 +15470,9 @@ if Redis:get(CHITIR.."name bot type : ") == "photo" then
     local NamesBot = (Redis:get(CHITIR.."Name:Bot") or "جيتر")
     local NameBots = {
 "قلب "..NamesBot ,
-"مين مزعلك بس يعيوني",
+"منو مزعلك يعيوني",
 "ثانيه واحده بسلك رقم واحده",
-"انا مش فاضي جيتر مكاني اهو",
+"مشغول حبيبي شويه وتعال",
 "قلبه ودقاته وكل حياته"
 }
   return send(msg_chat_id,msg_id,NameBots[math.random(#NameBots)],"md") 
@@ -15511,9 +15481,9 @@ if Redis:get(CHITIR.."name bot type : ") == "photo" then
       local NamesBot = (Redis:get(CHITIR.."Name:Bot") or "جيتر")
     local NameBots = {
 "قلب "..NamesBot ,
-"مين مزعلك بس يعيوني",
+"منو مزعلك يعيوني",
 "ثانيه واحده بسلك رقم واحده",
-"انا مش فاضي جيتر مكاني اهو",
+"مشغول حبيبي شويه وتعال",
 "قلبه ودقاته وكل حياته"
 }
   return send(msg_chat_id,msg_id,NameBots[math.random(#NameBots)],"md") 
@@ -16339,7 +16309,7 @@ name = string.gsub(name,"يركص","المايعرف___يكول الكاع عو�
 name = string.gsub(name,"العنب","المايلوح___يكول حامض")
 name = string.gsub(name,"العمه","___إذا حبت الچنة ابليس يدخل الجنة")
 name = string.gsub(name,"الخبز","انطي___للخباز حتى لو ياكل نصه")
-name = string.gsub(name,"باحصاد","اسمة___ومنجله مكسور")
+name = string.gsub(name,"بلحصاد","اسمة___ومنجله مكسور")
 name = string.gsub(name,"شهر","امشي__ولا تعبر نهر")
 name = string.gsub(name,"شكه","يامن تعب يامن__يا من على الحاضر لكة")
 name = string.gsub(name,"القرد","__بعين امه غزال")
