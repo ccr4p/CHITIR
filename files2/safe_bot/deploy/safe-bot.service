@@ -1,0 +1,23 @@
+# sudo cp deploy/safe-bot.service /etc/systemd/system/ ثم عدّل المسارات والمستخدم
+[Unit]
+Description=Safe Telegram group bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=botuser
+WorkingDirectory=/opt/safe_bot
+ExecStart=/opt/safe_bot/.venv/bin/python main.py
+Restart=always
+RestartSec=5
+# تقوية العزل
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/safe_bot/data
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target
